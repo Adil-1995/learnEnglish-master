@@ -11,8 +11,8 @@
   <h6>Elige la palabra correcta</h6>
   <div *ngFor="let item of examenArray">
     <div>
-      <ion-label>{{item.parteUno}}</ion-label>______
-      <ion-label>{{item.parteDos}}</ion-label>
+      <ion-label class="user_Name">{{item.parteUno}}</ion-label>______
+      <ion-label class="user_Name">{{item.parteDos}}</ion-label>
     </div>
     <ion-col *ngFor="let pal of item.options">
       <ion-button color="success" (click)="isCorrecto(item.idPalabra,pal.id)">{{pal.nombre}}</ion-button>
