@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Examen</ion-title>
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h6>Elige la palabra correcta</h6>
+  <div *ngFor="let item of examenArray">
+    <div>
+      <ion-label>{{item.parteUno}}</ion-label>______
+      <ion-label>{{item.parteDos}}</ion-label>
+    </div>
+    <ion-col *ngFor="let pal of item.options">
+      <ion-button color="success" (click)="isCorrecto(item.idPalabra,pal.id)">{{pal.nombre}}</ion-button>
+    </ion-col>
+    <br><br><br>
+  </div>
+
+</ion-content>

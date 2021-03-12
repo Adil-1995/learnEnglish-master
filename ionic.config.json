@@ -1,0 +1,7 @@
+{
+  "name": "learnEnglish",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

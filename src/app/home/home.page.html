@@ -1,0 +1,32 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      DoAdil
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true">
+
+  <div class="imgPrincipal">
+    <ion-img src="../../assets/img/learn.jpg"></ion-img>
+  </div>
+  <ion-button class="round" (click)="toViajar()" expand="block" name="airplane-outline" color="success">
+    <ion-icon class="myIcon" slot="start" src="../../assets/icon/passenger.svg"></ion-icon>
+
+    Viajar
+  </ion-button>
+  <ion-button class="round" (click)="toComida()" expand="block" color="secondary">
+    <ion-icon class="myIcon" slot="start" src="../../assets/icon/food.svg"></ion-icon>
+    Comida
+  </ion-button>
+  <ion-button class="round" (click)="toInformatica()" expand="block" color="tertiary">
+    <ion-icon class="myIcon" slot="start" src="../../assets/icon/computer.svg"></ion-icon>
+    Informática
+  </ion-button>
+  <ion-button class="round" (click)="toNacionalidades()" expand="block" color="danger">
+    <ion-icon class="myIcon" slot="start" src="../../assets/icon/flags.svg"></ion-icon>
+    Nacionalidades
+  </ion-button>
+
+</ion-content>

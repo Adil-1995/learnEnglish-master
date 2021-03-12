@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>comida</ion-title>
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngFor="let item of frases">
+    <ion-item>
+      <ion-label> En Ingles : {{item.fraseEn}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label  color="danger">En Español : {{item.fraseEs}}</ion-label>
+    </ion-item>
+    <ion-label>-----------------------------------------</ion-label>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-button routerLink="/Home">
+    <ion-icon name="home-outline"></ion-icon>
+  </ion-button>
+  <div class="examen">
+    <ion-button color="success" (click)="routerMe()" >Haz el Test</ion-button>
+</div>
+</ion-footer>
