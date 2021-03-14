@@ -32,7 +32,7 @@ export class ExamenPage implements OnInit {
       if (this.acertadas === this.examenArray.length) {
         Swal.fire(
           'Good job!',
-          'You clicked the button!',
+          'Adelante!',
           'success'
         )
         this.route.navigate(['/home']);
